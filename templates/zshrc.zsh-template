@@ -74,3 +74,4 @@ export PATH=$HOME/bin:/usr/local/bin:$PATH
 # export SSH_KEY_PATH="~/.ssh/dsa_id"
 
 bindkey -v
+setopt APPEND_HISTORY SHARE_HISTORY

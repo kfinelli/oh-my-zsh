@@ -76,6 +76,9 @@ export PATH=$HOME/bin:/usr/local/bin:$PATH
 bindkey -v
 setopt APPEND_HISTORY SHARE_HISTORY
 
+if [ -f ~/.shell_local ]: then
+    . ~/.shell_local
+
 stoneage() {
     PROMPT='>'
     RPROMPT=''

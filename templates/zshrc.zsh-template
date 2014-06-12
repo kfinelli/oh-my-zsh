@@ -79,6 +79,8 @@ setopt APPEND_HISTORY SHARE_HISTORY
 if [ -f ~/.shell_local ]: then
     . ~/.shell_local
 
+export EDITOR='vim'
+
 stoneage() {
     PROMPT='>'
     RPROMPT=''

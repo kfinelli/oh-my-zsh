@@ -80,8 +80,9 @@ export PATH=$HOME/bin:/usr/local/bin:$PATH
 setopt APPEND_HISTORY SHARE_HISTORY
 bindkey -v
 
-if [ -f ~/.shell_local ]: then
+if [ -f ~/.shell_local ]; then
     . ~/.shell_local
+fi
 
 export EDITOR='vim'
 

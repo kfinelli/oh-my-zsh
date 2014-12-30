@@ -11,14 +11,14 @@ WORDCHARS=''
 zmodload -i zsh/complist
 
 ## case-insensitive (all),partial-word and then substring completion
-if [ "x$CASE_SENSITIVE" = "xtrue" ]; then
-  zstyle ':completion:*' matcher-list 'r:|[._-]=* r:|=*' 'l:|=* r:|=*'
-  unset CASE_SENSITIVE
-else
-  zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}' 'r:|[._-]=* r:|=*' 'l:|=* r:|=*'
-fi
-
-zstyle ':completion:*' list-colors ''
+##if [ "x$CASE_SENSITIVE" = "xtrue" ]; then
+##  zstyle ':completion:*' matcher-list 'r:|[._-]=* r:|=*' 'l:|=* r:|=*'
+##  unset CASE_SENSITIVE
+##else
+##  zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}' 'r:|[._-]=* r:|=*' 'l:|=* r:|=*'
+##fi
+##
+##zstyle ':completion:*' list-colors ''
 
 # should this be in keybindings?
 bindkey -M menuselect '^o' accept-and-infer-next-history
